@@ -24,8 +24,6 @@
   "author": "pip install python <pipinstallpython@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@material-ui/core": "^4.12.4",
-    "@material-ui/icons": "^4.11.3",
     "card-validator": "^9.1.0",
     "ramda": "^0.26.1",
     "react-credit-card-input": "^1.1.5",
