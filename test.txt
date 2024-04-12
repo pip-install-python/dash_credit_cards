@@ -1,0 +1,85 @@
+can you help me display the numbers being entered when typed into:
+
+```
+import React from 'react';
+import PropTypes from 'prop-types';
+import CreditCardInput from 'react-credit-card-input';
+
+const DashCreditCardInput = (props) => {
+    const {id, children, style, className, ...otherProps} = props;
+
+    return (
+        <CreditCardInput className={className} {...otherProps}>
+            <div id={id} style={{ ...style }}>
+                {children}
+            </div>
+        </CreditCardInput>
+    );
+}
+
+DashCreditCardInput.defaultProps = {
+    className: '',
+    cardNumberInputProps: {},
+    cardExpiryInputProps: {},
+    cardCVCInputProps: {},
+    fieldClassName: 'input',
+    inputComponent: 'input',
+    containerClassName: '',
+    customTextLabels: {},
+    placeholders: {
+        name: 'YOUR NAME HERE',
+    },
+    issuer: 'unknown',
+    preview: false,
+    acceptedCards: [],
+    callback: () => {},
+    onError: () => {},
+    cardNumberInputRenderer: undefined,
+    cardExpiryInputRenderer: undefined,
+    cardCVCInputRenderer: undefined,
+    cardImageClassName: '',
+    cardImageStyle: {},
+    containerStyle: {},
+    dangerTextClassName: '',
+    dangerTextStyle: {},
+    fieldStyle: {},
+    inputClassName: '',
+    inputStyle: {},
+    invalidClassName: 'is-invalid',
+    invalidStyle: {},
+};
+
+DashCreditCardInput.propTypes = {
+    id: PropTypes.string,
+    children: PropTypes.node,
+    style: PropTypes.object,
+    className: PropTypes.string,
+    cardNumberInputProps: PropTypes.object,
+    cardExpiryInputProps: PropTypes.object,
+    cardCVCInputProps: PropTypes.object,
+    fieldClassName: PropTypes.string,
+    inputComponent: PropTypes.oneOfType([PropTypes.string, PropTypes.func]),
+    containerClassName: PropTypes.string,
+    customTextLabels: PropTypes.object,
+    placeholders: PropTypes.object,
+    issuer: PropTypes.string,
+    preview: PropTypes.bool,
+    acceptedCards: PropTypes.array,
+    callback: PropTypes.func,
+    onError: PropTypes.func,
+    cardNumberInputRenderer: PropTypes.func,
+    cardExpiryInputRenderer: PropTypes.func,
+    cardCVCInputRenderer: PropTypes.func,
+    cardImageClassName: PropTypes.string,
+    cardImageStyle: PropTypes.object,
+    containerStyle: PropTypes.object,
+    dangerTextClassName: PropTypes.string,
+    dangerTextStyle: PropTypes.object,
+    fieldStyle: PropTypes.object,
+    inputClassName: PropTypes.string,
+    inputStyle: PropTypes.object,
+    invalidClassName: PropTypes.string,
+    invalidStyle: PropTypes.object,
+};
+export default DashCreditCardInput;
+```

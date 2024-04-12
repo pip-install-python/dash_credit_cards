@@ -1,0 +1,11 @@
+include dash_credit_cards/dash_credit_cards.min.js
+include dash_credit_cards/dash_credit_cards.min.js.map
+include dash_credit_cards/async-*.js
+include dash_credit_cards/async-*.js.map
+include dash_credit_cards/*-shared.js
+include dash_credit_cards/*-shared.js.map
+include dash_credit_cards/metadata.json
+include dash_credit_cards/package-info.json
+include README.md
+include LICENSE
+include package.json
